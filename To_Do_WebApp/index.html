@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do WebApp | OIBSIP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Daily Task Manager</h1>
+      <p>Organize your pending and completed tasks beautifully</p>
+    </div>
+
+    <div class="input-box">
+      <input type="text" id="taskInput" placeholder="Enter your task here...">
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="task-board">
+      <div class="task-section">
+        <h2>Pending Tasks</h2>
+        <ul id="pendingList"></ul>
+      </div>
+
+      <div class="task-section completed-box">
+        <h2>Completed Tasks</h2>
+        <ul id="completedList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
