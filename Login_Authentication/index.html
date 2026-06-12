@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Authentication | OIBSIP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container" id="authPage">
+    <div class="left-box">
+      <h1>Welcome Back!</h1>
+      <p>Secure login authentication system with register, login and protected dashboard.</p>
+    </div>
+
+    <div class="form-box">
+      <h2 id="formTitle">Login</h2>
+
+      <input type="text" id="name" placeholder="Full Name" class="hide">
+      <input type="email" id="email" placeholder="Email Address">
+      <input type="password" id="password" placeholder="Password">
+
+      <button onclick="handleAuth()" id="authBtn">Login</button>
+
+      <p id="message"></p>
+
+      <p class="switch">
+        <span id="switchText">Don't have an account?</span>
+        <a onclick="toggleForm()">Register</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="dashboard hide" id="dashboard">
+    <div class="card">
+      <h1>🎉 Login Successful</h1>
+      <p>Welcome to your secured dashboard.</p>
+
+      <div class="user-info">
+        <h3 id="userName"></h3>
+        <p id="userEmail"></p>
+      </div>
+
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
